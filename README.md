@@ -53,12 +53,12 @@ Preparing files
     • A handy trick is to go into the resource pack menu, click ‘Open resource pack folder’, and then go up a level by clicking on the name of your installation's directory (such as `.minecraft`) (Windows File Explorer)\
     
 10. 
-    a) Rename the files appropriately to match the format `panorama<n>.png` where \<n\> starts at 0 and increments to 5, and should be in the order of the creation fate of the screenshots
+    a) Rename the files appropriately to match the format `panorama_<n>.png` where \<n\> starts at 0 and increments to 5, and should be in the order of the creation fate of the screenshots
     
-    b) Using PowerToys, select all the files, open the context menu (right-click), select PowerRename (the W key) and then in the `Replace with` field, input `panorama${}`
+    b) Using PowerToys, select all the files, open the context menu (right-click), select PowerRename (the W key) and then in the `Replace with` field, input `panorama_${}`
         • Verify that `Enumerate items` is enabled (the button on the rightmost side under ‘Text formatting’)
     
-    • An error possible here is that in steps 7 and 8, the command `/tp @s ~ ~ ~ 0 ~90` was used instead of `/tp @s ~ ~ ~ 0 ~-90`, which means the top and bottom faces of the panorama's cube are swapped. The sky should be `panorama4.png` and the ground should be `panorama5.png`.
+    • An error possible here is that in steps 7 and 8, the command `/tp @s ~ ~ ~ 0 ~90` was used instead of `/tp @s ~ ~ ~ 0 ~-90`, which means the top and bottom faces of the panorama's cube are swapped. The sky should be `panorama_4.png` and the ground should be `panorama_5.png`.
     
 11. Edit the `pack.mcmeta` with the appropriate [pack_format](https://minecraft.wiki/w/Tutorials/Creating_a_resource_pack#%22pack_format%22) and your own `description`.
     • Optionally replace the `pack.png` file that's also in `/pack`.
