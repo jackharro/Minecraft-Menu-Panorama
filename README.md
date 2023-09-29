@@ -5,7 +5,6 @@ Procedure:
 ========================
 
 Preliminaries (all optional)
--------------------
 
      • Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Carpet mod](https://github.com/gnembon/fabric-carpet/releases).
         • When in the game, use the command `/carpet commandTick true` to enable `tick`, then run `/tick freeze` to stop animals from moving
