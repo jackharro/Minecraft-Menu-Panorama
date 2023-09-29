@@ -1,27 +1,28 @@
 # Welcome!
 This is a repo that makes generating new menu panoramas from the original world easy for resource pack developers or users. Or, you can grab a resource pack that has a custom menu panorama from the [releases page](https://github.com/jacko-png/Minecraft-Menu-Panorama/releases). <Format the releases such that each resource pack is underneath the version>
 
-Procedure:
-========================
+Procedure
+=========
 
 Preliminaries (all optional)
+----------------------------
 
-    • Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Carpet mod](https://github.com/gnembon/fabric-carpet/releases).
-        • When in the game, use the command `/carpet commandTick true` to enable `tick`, then run `/tick freeze` to stop animals from moving
-        
-    • Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Iris mod](https://github.com/IrisShaders/Iris/releases).
-        • iirc, Iris requires another mod, but it'll spit an error once you load the game and tell you what to do
+• Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Carpet mod](https://github.com/gnembon/fabric-carpet/releases).
+    • When in the game, use the command `/carpet commandTick true` to enable `tick`, then run `/tick freeze` to stop animals from moving
+    
+• Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Iris mod](https://github.com/IrisShaders/Iris/releases).
+    • iirc, Iris requires another mod, but it'll spit an error once you load the game and tell you what to do
 
-    • Download and install [PowerToys](https://github.com/microsoft/PowerToys/releases) and set it up so that you can use Po&werRename <the ampersand is intentional: that is the shell syntax for ‘the following character's key can be pressed to select this menu item’>
-        • You will be instructed how to do this in step [10b](#preparing-files) <preparing-files is close enough>
-        
-    • Create a new profile in the launcher so that your current settings are not changed with the parameters detailed in step 2 and the settings detailed in step 3
+• Download and install [PowerToys](https://github.com/microsoft/PowerToys/releases) and set it up so that you can use Po&werRename <the ampersand is intentional: that is the shell syntax for ‘the following character's key can be pressed to select this menu item’>
+    • You will be instructed how to do this in step [10b](#preparing-files) <preparing-files is close enough>
+    
+• Create a new profile in the launcher so that your current settings are not changed with the parameters detailed in step 2 and the settings detailed in step 3
 
-    • When in-game, disable clouds so that the stitching doesn't have issues
-        • Alternatively, load each view and use a program like AHK to perform the screenshots within 6 frames (the higher the fps, the shorter the interpolation) so that the distance the clouds move is minimised
+• When in-game, disable clouds so that the stitching doesn't have issues
+    • Alternatively, load each view and use a program like AHK to perform the screenshots within 6 frames (the higher the fps, the shorter the interpolation) so that the distance the clouds move is minimised
 
 Preparation
--------------------
+-----------
 
 1. Download `/User-Custom` and put `world` in your saves folder and `pack` in a known directory.
     • The world will have the title `8091867987493326313` in-game, one of the valid seeds to generate the world.
@@ -32,7 +33,7 @@ Preparation
     • Optionally apply a texture pack or shaders
 
 Taking screenshots
---------------------
+------------------
 
 4. Run the command `/tp @s ~ ~ ~ 0 0` to reset your position and take a screenshot (this guide will assume in-game screenshots with F2)
     • The inital coordinates are 61.48, 75, -68.73
@@ -46,7 +47,7 @@ Taking screenshots
 8. Repeat step 7 once more
 
 Preparing files
----------------------
+---------------
 9. Put the screenshots into a resource pack prepared now or earlier
     • The panorama is in `/assets/minecraft/textures/gui/title/background`
     • A handy trick is to go into the resource pack menu, click ‘Open resource pack folder’, and then go up a level by clicking on the name of your installation's directory (such as `.minecraft`) (Windows File Explorer)\
@@ -66,8 +67,8 @@ Preparing files
 
 13. The `.zip` file created is a resource pack with your new menu panorama.
 
-History:
-========================
+History
+=======
 
 I made the inital version ages ago, but only rendered about ten chunks in b1.7.3 (there was a bug with Far until b1.8).
 Today 2023-09-29, I had the idea of generating more by using an old version of OptiFine which allowed a higher render distance (idk the numbers. Fun fact, all the measurements are in metres in this version, rather than chunks). This resulted in the world which is available on the repo. I used a tool which also ended up in the repo to restore the biomes. This world was opened in 1.20.2, but if you need an older world format just let me know. (I had generated some ice in 1.6.4 and removed it in 1.20.2, which is why I didn't upload the version of the world from 1.6.4) // verify that this is the case by checking the commit history.
