@@ -5,7 +5,7 @@ Preliminaries (all optional):
 ------------------------
 
      • Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Carpet mod](https://github.com/gnembon/fabric-carpet/releases).
-        • When in the game, use the command ```/carpet commandTick true``` to enable `tick`, then run ```/tick freeze``` to stop animals from moving
+        • When in the game, use the command `/carpet commandTick true` to enable `tick`, then run `/tick freeze` to stop animals from moving
         
     • Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Iris mod](https://github.com/IrisShaders/Iris/releases).
         • iirc, Iris requires another mod, but it'll spit an error once you load the game and tell you what to do
@@ -32,7 +32,7 @@ Preparation
 Taking screenshots
 
 
-4. Run the command ```tp @s ~ ~ ~ 0 0``` to reset your position and take a screenshot (this guide will assume in-game screenshots with F2)
+4. Run the command `tp @s ~ ~ ~ 0 0` to reset your position and take a screenshot (this guide will assume in-game screenshots with F2)
 
 5. Run the command
 
