@@ -4,7 +4,7 @@ This is a repo that makes generating new menu panoramas from the original world 
 Procedure:
 ========================
 
-Preliminaries (all optional):
+Preliminaries (all optional)
 -------------------
 
      • Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Carpet mod](https://github.com/gnembon/fabric-carpet/releases).
