@@ -67,6 +67,8 @@ Preparing files
 
 13. The `.zip` file created is a resource pack with your new menu panorama.
 
+If you want your pack to be part of the repository's releases, put the pack in `/Release-Requests` and include any additional notes in that directory, then submit a pull request <is this what a pull request is?>.
+
 History
 =======
 
