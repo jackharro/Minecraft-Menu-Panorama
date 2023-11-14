@@ -6,3 +6,5 @@
 ^ completed
 2. Release versions for old pack formats
     • Can you release 1.20.2 and then 1.7.10?
+
+3. Texture pack that changes clouds texture to match the original menu panorama at the origin, and extra step to run `tick freeze` asap.

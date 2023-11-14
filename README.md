@@ -7,23 +7,15 @@ Procedure
 Preliminaries (all optional)
 ----------------------------
 
-• Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Carpet mod](https://github.com/gnembon/fabric-carpet/releases).
-    
-– When in the game, use the command `/carpet commandTick true` to enable `tick`, then run `/tick freeze` to stop animals from moving
-    
-• Download and install [Fabric loader](https://fabricmc.net/use/installer/) and [Iris mod](https://github.com/IrisShaders/Iris/releases).
-    
-– iirc, Iris requires another mod, but it'll spit an error once you load the game and tell you what to do
+• Run the game in version 1.20.3 and use the command `tick freeze` to stop the clouds from moving
+
+• AutoHotKey to run or build the script from source
 
 • Download and install [PowerToys](https://github.com/microsoft/PowerToys/releases) and set it up so that you can use Po&werRename <the ampersand is intentional: that is the shell syntax for ‘the following character's key can be pressed to select this menu item’>
     
 – You will be instructed how to do this in step [10b](#preparing-files) <preparing-files is close enough>
     
 • Create a new profile in the launcher so that your current settings are not changed with the parameters detailed in step 2 and the settings detailed in step 3
-
-• When in-game, disable clouds so that the stitching doesn't have issues
-    
-– Alternatively, load each view and use a program like AHK to perform the screenshots within 6 frames (the higher the fps, the shorter the interpolation) so that the distance the clouds move is minimised
 
 Preparation
 -----------
@@ -34,24 +26,36 @@ Preparation
 
 3. In the launcher, edit your installation's profile so that the resolution is square (such as 1080 x 1080 or 720 x 720) and set the `-Xmx` argument to a little under the RAM your PC has (e.g. if you have 16GB of RAM, you can use `-Xmx12G` or `Xmx14G`.)
 
-4. In-game, set your FOV to 90 and your render distance to 32 (even if you don't get playable fps, the frame will eventually render)
+4. In-game, set your FOV to 90 and your render distance to 32 (even if you don't get playable fps, the frame will eventually render), and your mouse sensitivity low.
 
 – Optionally apply a texture pack or shaders
 
-Taking screenshots
-------------------
+Taking screenshots manually
+---------------------------
 
-4. Run the command `/tp @s ~ ~ ~ 0 0` to reset your position and take a screenshot (this guide will assume in-game screenshots with F2)
+4. Run the command `tp @s ~ ~ ~ 0 0` to reset your position and take a screenshot (this guide will assume in-game screenshots with F2)
 
 – The inital coordinates are 61.48, 75, -68.73
 
-5. Run the command `/tp @s ~ ~ ~ ~90 0` and press F2
+5. Run the command `tp @s ~ ~ ~ ~90 0` and press F2
 
 6. Repeat step 5 three times
 
-7. Run the command `/tp @s ~ ~ ~ 0 ~-90` and press F2
+7. Run the command `tp @s ~ ~ ~ 0 ~-180` and press F2
 
 8. Repeat step 7 once more
+
+Using the AutoHotKey script
+---------------------------
+4. Download the standalone executable, or run the `ahk` file with AutoHotKey
+
+5. Run `tp @s 61.48 75 -68.73 0 0` to ensure you're placed correctly
+
+6. Run the script and return to Minecraft
+
+7. Press Alt + L to load the world fully
+
+8. Press Alt + R to run the screenshot script
 
 Preparing files
 ---------------
@@ -82,4 +86,5 @@ History
 =======
 
 I made the inital version ages ago, but only rendered about ten chunks in b1.7.3 (there was a bug with Far until b1.8).
-Today 2023-09-29, I had the idea of generating more by using an old version of OptiFine which allowed a higher render distance (idk the numbers. Fun fact, all the measurements are in metres in this version, rather than chunks). This resulted in the world which is available on the repo. I used a tool which also ended up in the repo to restore the biomes. This world was opened in 1.20.2, but if you need an older world format just let me know. (I had generated some ice in 1.6.4 and removed it in 1.20.2, which is why I didn't upload the version of the world from 1.6.4) // verify that this is the case by checking the commit history.
+Today 2023-09-29, I had the idea of generating more by using an old version of OptiFine which allowed a higher render distance (idk the numbers. Fun fact, all the measurements are in metres in this version, rather than chunks).
+Plans are in place from 2023-11-14 to remake the original world from scratch by using AHK to make Steve into a rotisserie.
